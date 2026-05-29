@@ -63,7 +63,7 @@
             <table class="result-table">
                 <tr><td>Nama</td><td>: <span id="resNama"></span></td></tr>
                 <tr><td>NISN</td><td>: <span id="resNisn"></span></td></tr>
-                <tr><td>NISI</td><td>: <span id="resNisi"></span></td></tr>
+                <tr><td>Tanggal Lahir</td><td>: <span id="resTanggalLahir"></span></td></tr>
                 <tr><td>Kelas</td><td>: <span id="resKelas"></span></td></tr>
             </table>
 
@@ -99,7 +99,7 @@
                     if (data.status === "found") {
                         document.getElementById("resNama").innerText = data.nama;
                         document.getElementById("resNisn").innerText = data.nisn;
-                        document.getElementById("resNisi").innerText = data.nisi;
+                        document.getElementById("resTanggalLahir").innerText = data.tanggalLahir;
                         document.getElementById("resKelas").innerText = data.kelas;
                         
                         const statusBox = document.getElementById("resStatus");
